@@ -8,6 +8,11 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix"
+    ]
+  },
   "dependencies": {
     "@types/node": "20.4.4",
     "@types/react": "18.2.15",
@@ -22,6 +27,8 @@
   "devDependencies": {
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
     "prettier": "3.0.0"
   }
 }
