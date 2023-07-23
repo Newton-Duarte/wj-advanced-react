@@ -1,4 +1,13 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
-npx --no-install lint-staged
+echo '🏗️👷 Styling and testing your project before committing'
+
+npx --no-install lint-staged ||
+(
+        echo '😤🏀👋😤 shit... ESLint automatic fix failed 😤🏀👋😤
+              Make the required changes listed'
+        false;
+)
+
+echo '✅ Oh! Congratulations, all good bro! ✅'
