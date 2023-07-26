@@ -1,8 +1,8 @@
 import * as S from './styles';
 
 export interface MainProps {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }
 
 export function Main({
