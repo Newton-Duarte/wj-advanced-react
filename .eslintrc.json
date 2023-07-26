@@ -4,5 +4,10 @@
     "jest": true,
     "node": true
   },
-  "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:prettier/recommended"]
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:storybook/recommended"
+  ]
 }
